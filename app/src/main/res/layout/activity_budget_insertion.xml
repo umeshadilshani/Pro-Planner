@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BudgetInsertionActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/layout_bg"
+        android:translationZ="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibBackInsertB"
+            android:layout_width="58dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_back"
+            android:scaleType="centerCrop"
+            android:translationX="5dp"
+            android:translationY="7dp"
+            app:srcCompat="@drawable/backbtn"
+            tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/tvFullAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_budget"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:translationX="100dp"
+            android:translationY="15dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/form_card_width"
+        android:layout_height="@dimen/form_card_height"
+        android:layout_marginStart="@dimen/form_card_margin_start"
+        android:layout_marginEnd="@dimen/form_card_margin_end"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/layout_card1"
+        android:orientation="vertical"
+        android:translationZ="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/placeholder_prj_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+            <EditText
+                android:id="@+id/etProjectBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/placeholder_prj_budget"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/categories_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addCategoryClicked"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAddCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner"
+                android:onClick="addCategoryClicked"
+                android:text="@string/btn_add_cat"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSaveBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:onClick="saveBudgetClicked"
+                android:text="@string/btn_save"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

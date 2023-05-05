@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="heading2">#4A4E69</color>
+    <color name="heading3">#6C757D</color>
+    <color name="next">#2EC4B6</color>
+    <color name="background">#8093f1</color>
+    <color name="background1">#dee2e6</color>
+    <color name="progress_background">#1976D2</color>
+    <color name="blue_54">#BBDEFB</color>
+    <color name="blue_245">#42A5F5</color>
+    <color name="blue_238">#4361ee</color>
+    <color name="blue_189">#ADB5BD</color>
+    <color name="textBudget">#B388FF</color>
+    <color name="form_background">#E5E5E5</color>
 </resources>

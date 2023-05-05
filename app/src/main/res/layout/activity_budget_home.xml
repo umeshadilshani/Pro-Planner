@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_500"
+    tools:context=".activities.BudgetHomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_background_height"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibBackHome"
+            android:layout_width="58dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_back"
+            android:scaleType="centerCrop"
+            android:translationX="5dp"
+            android:translationY="7dp"
+            app:srcCompat="@drawable/backbtn"
+            tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_budget"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:translationX="145dp"
+            android:translationY="80dp" />
+
+        <TextView
+            android:id="@+id/tvFullAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:translationX="110dp"
+            android:translationY="40dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="-395dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/layout_card1"
+        android:orientation="vertical"
+        android:translationZ="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/background1"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/tvFullSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="30dp"
+                android:translationY="50dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/spent_b"
+                android:textColor="@color/heading3"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:translationX="50dp"
+                android:translationY="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/available_b"
+            android:textColor="@color/heading3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:translationX="230dp"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/tvFullAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="220dp"
+            android:translationY="50dp" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCreateBudget"
+        android:layout_width="@dimen/small_card_width"
+        android:layout_height="@dimen/small_card_height"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="56dp"
+        android:translationZ="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cvInsight"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibCreateBudget"
+            android:layout_width="@dimen/small_btn_height"
+            android:layout_height="@dimen/small_btn_width"
+            android:background="@drawable/btn_rounded_corner"
+            android:contentDescription="@string/btn_create"
+            android:scaleType="fitStart"
+            android:src="@drawable/addbudget"
+            android:translationX="50dp"
+            android:translationY="10dp"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/tvCreateBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:textColor="@color/heading3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="50dp"
+            android:translationY="70dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvViewBudget"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="56dp"
+        android:translationZ="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cvTipsI"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvViewBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view"
+            android:textColor="@color/heading3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="55dp"
+            android:translationY="70dp" />
+
+        <ImageButton
+            android:id="@+id/ibViewBudget"
+            android:layout_width="59dp"
+            android:layout_height="57dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:contentDescription="@string/btn_view"
+            android:scaleType="fitStart"
+            android:src="@drawable/search"
+            android:translationX="50dp"
+            android:translationY="10dp"
+            tools:ignore="RedundantDescriptionCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvInsight"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="76dp"
+        android:translationZ="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvInsight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insight"
+            android:textColor="@color/heading3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="50dp"
+            android:translationY="70dp" />
+
+        <ImageButton
+            android:id="@+id/ibInsight"
+            android:layout_width="59dp"
+            android:layout_height="57dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:contentDescription="@string/btn_insight"
+            android:scaleType="fitStart"
+            android:src="@drawable/insight"
+            android:translationX="50dp"
+            android:translationY="10dp"
+            tools:ignore="RedundantDescriptionCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTipsI"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="76dp"
+        android:translationZ="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvTipsI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommendation"
+            android:textColor="@color/heading3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="58dp"
+            android:translationY="70dp" />
+
+        <ImageButton
+            android:id="@+id/ibTipsI"
+            android:layout_width="59dp"
+            android:layout_height="57dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:contentDescription="@string/btn_tips"
+            android:scaleType="fitStart"
+            android:src="@drawable/suggestions"
+            android:translationX="50dp"
+            android:translationY="10dp"
+            tools:ignore="RedundantDescriptionCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
