@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/etCatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:hint="@string/placeholder_add_cat"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#616161" />
+
+    <EditText
+        android:id="@+id/etCatBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:hint="@string/placeholder_cat_estimate"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#616161" />
+
+</LinearLayout>
