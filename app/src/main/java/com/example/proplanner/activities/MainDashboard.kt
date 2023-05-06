@@ -35,15 +35,15 @@ class MainDashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        btnInventory.setOnClickListener{
-//            var intent = Intent(this@MainDashboard, InventoryDashboard::class.java)
-//            startActivity(intent)
-//        }
-//
-//        btnSales.setOnClickListener{
-//            var intent = Intent(this@MainDashboard, SalesDashboard::class.java)
-//            startActivity(intent)
-//        }
+        btnInventory.setOnClickListener{
+            var intent = Intent(this@MainDashboard, InventoryDashboard::class.java)
+            startActivity(intent)
+        }
+
+        btnSales.setOnClickListener{
+            var intent = Intent(this@MainDashboard, SalesDashboard::class.java)
+            startActivity(intent)
+        }
         textView9.setOnClickListener{
             openPlanWelcome()
         }
