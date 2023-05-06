@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditSales">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/layout_bg"
+        android:translationZ="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnSdback"
+            android:layout_width="58dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_back"
+            android:scaleType="centerCrop"
+            android:translationX="5dp"
+            android:translationY="7dp"
+            app:srcCompat="@drawable/backbtn"
+            tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/productX"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:translationX="130dp"
+            android:translationY="15dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/layout_card1"
+        android:orientation="vertical"
+        android:translationZ="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/btn_update"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:translationX="90dp"
+            android:translationY="380dp" />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btn_delete"
+            android:text="@string/btn_delete"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="90dp"
+            android:translationY="400dp" />
+
+        <EditText
+            android:id="@+id/prName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/productX"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/heading3"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-50dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <EditText
+            android:id="@+id/prBatchNo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/batchX"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/heading3"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-40dp" />
+
+        <EditText
+            android:id="@+id/prQuan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/qtyX"
+            android:inputType="number"
+            android:textColorHint="@color/heading3"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-30dp" />
+
+        <EditText
+            android:id="@+id/prUniPri"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/unit_price"
+            android:inputType="number"
+            android:textColorHint="@color/heading3"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-20dp" />
+
+        <EditText
+            android:id="@+id/prDate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-10dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/AprName"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-305dp" />
+
+        <TextView
+            android:id="@+id/AprBatchNo"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/batch_no"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-275dp" />
+
+        <TextView
+            android:id="@+id/AprQuan"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/qty"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-245dp" />
+
+        <TextView
+            android:id="@+id/AprUniPri"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_price_title"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-215dp" />
+
+        <TextView
+            android:id="@+id/AprDate"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="-180dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
