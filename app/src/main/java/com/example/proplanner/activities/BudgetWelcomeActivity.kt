@@ -22,7 +22,7 @@ class BudgetWelcomeActivity : AppCompatActivity() {
 
         //Redirecting to home page on button click
         txtSkip.setOnClickListener{
-            var intent = Intent(this, BudgetHomeActivity::class.java)
+            var intent = Intent(this, MainDashboard::class.java)
             startActivity(intent)
         }
         txtNext.setOnClickListener{
