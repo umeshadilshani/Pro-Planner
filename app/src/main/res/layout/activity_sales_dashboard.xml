@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_500"
+    tools:context=".activities.SalesDashboard">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnSdback"
+            android:layout_width="58dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_back"
+            android:scaleType="centerCrop"
+            android:translationX="5dp"
+            android:translationY="7dp"
+            app:srcCompat="@drawable/backbtn"
+            tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sales_manager"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:translationX="100dp"
+            android:translationY="15dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/layout_card1"
+        android:orientation="vertical"
+        android:translationZ="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/viewSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_details"
+            android:textAllCaps="true"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="160dp"
+            android:translationY="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/view_details"
+            app:srcCompat="@drawable/view"
+            tools:ignore="ImageContrastCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/layout_card1"
+        android:orientation="vertical"
+        android:translationZ="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnSalesD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_details"
+            android:textAllCaps="true"
+            android:textColor="@color/heading3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="160dp"
+            android:translationY="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/add_details"
+            app:srcCompat="@drawable/asales"
+            tools:ignore="ImageContrastCheck" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
