@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt' // If using Kotlin
 }
 
 android {
@@ -31,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -46,4 +50,12 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.firebase:firebase-auth-ktx:21.3.0'
+    // Espresso-contrib for additional Espresso resources (optional)
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+    // Espresso Intents for testing intents and activity results (optional)
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
+    // Espresso Idling Resource for asynchronous testing (optional)
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.5.1'
 }

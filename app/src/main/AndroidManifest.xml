@@ -13,34 +13,84 @@
         android:theme="@style/Theme.ProPlanner"
         tools:targetApi="31">
         <activity
-            android:name=".activities.BudgetWelcomeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.BudgetHomeActivity"
+            android:name=".activities.PlanWelcome"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+<!--        <activity-->
+<!--            android:name=".activities.SalesWelcome"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.EditSales"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.Sales"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.AddSales"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.SalesDashboard"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.InventoryWelcome"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.EditProduct"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.ProductFetch"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.AddProduct"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activities.InventoryDashboard"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
         <activity
-            android:name=".activities.BudgetInsertionActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".activities.BudgetFetchActivity"
+            android:name=".activities.BudgetTipsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -54,6 +104,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".activities.BudgetFetchActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.BudgetInsightActivity"
             android:exported="false">
             <meta-data
@@ -61,8 +118,73 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.BudgetTipsActivity"
+            android:name=".activities.BudgetInsertionActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.BudgetHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.CreatePlan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.DetailedPlan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.MainActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+        <activity
+            android:name=".activities.PlanDashboard"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.SignUp"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+        <activity
+            android:name=".activities.BudgetWelcomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.MainDashboard"
+            android:exported="false">
+
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
