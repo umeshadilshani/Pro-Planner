@@ -74,4 +74,54 @@
     <string name="tips_budget">Tips for your projects</string>
     <string name="search_et">Search</string>
     <string name="insights">Project Insights</string>
+    <string name="plan_create">Create Plan</string>
+    <string name="pj_description">Project Description</string>
+    <string name="plan_dashboard">Plan Dashboard</string>
+    <string name="Stasks">Tasks</string>
+    <string name="add_task">Add task</string>
+    <string name="_02">02)</string>
+    <string name="_01">01)</string>
+    <string name="period">Time Period</string>
+    <string name="save">save</string>
+    <string name="project00">Project 00</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+
+    <string name="demo_product">Product Name : Product X\n\nQuantity : XXX\n\nSupplier : Supplier X</string>
+    <string name="product">Product</string>
+    <string name="new_product">New Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier">Supplier Name</string>
+    <string name="price">Price</string>
+    <string name="product_title">Product X</string>
+    <string name="inventory_controller">Inventory Manager</string>
+    <string name="welcome">Welcome to Inventory Manager</string>
+    <string name="des_welcome">\t\t\t\tEasily add new product details,\n\t\t\t\t\t\t\t\ttrack inventory details</string>
+    <string name="tips_inventory">Inventory Management Tips</string>
+    <string name="demo_tip">Try to keep your inventories\nup to date, and make your business\n move on track.</string>
+    <string name="demo_quantity">XXX</string>
+    <string name="demo_supplier">Supplier X</string>
+
+
+    <string name="welcome_sales_manager">Welcome to Sales Manager</string>
+    <string name="sales_manager">Sales Manager</string>
+    <string name="sales_planner_img">Image Sales Planner</string>
+    <string name="des_sales_planner">\tEasily create sales orders, \n\ttake control of your orders,\n\t\t\t\t\tand track your sales.</string>
+    <string name="add_details">\t\t\t\t\t\t\tAdd\nSale Details</string>
+    <string name="view_details">\t\t\t\t\t\tView\nSale Records</string>
+    <string name="add">Add Sales Details</string>
+    <string name="name">Product Name</string>
+    <string name="productX">Product X</string>
+    <string name="batch_no">Batch No</string>
+    <string name="batchX">Batch X</string>
+    <string name="qtyX">XXX</string>
+    <string name="unit_price">X,XXX</string>
+    <string name="qty">Quantity</string>
+    <string name="unit_price_title">Unit Price</string>
+    <string name="date">Date</string>
+    <string name="add_sale">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="demo_sales_details">Product Name : Product X\n\nBatch No : XX\n\nPrice : Rs.XX,XXX</string>
+
 </resources>
