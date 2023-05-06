@@ -4,6 +4,7 @@ package com.example.proplanner.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -27,6 +28,8 @@ class BudgetHomeActivity : AppCompatActivity() {
     private lateinit var tvTipsI : TextView
     private lateinit var ibTipsI : ImageButton
     private lateinit var cvTipsI : CardView
+    private lateinit var btnBack : ImageButton
+//    val imageButton: ImageButton = findViewById(R.id.ibBackHome)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +55,13 @@ class BudgetHomeActivity : AppCompatActivity() {
         tvFullBudget = findViewById(R.id.tvFullAmount)
         tvFullSpent = findViewById(R.id.tvFullSpent)
         tvFullAvailable = findViewById(R.id.tvFullAvailable)
+
+        btnBack = findViewById(R.id.ibBackHome)
+
+        btnBack.setOnClickListener{
+            var intent = Intent(this@BudgetHomeActivity, MainDashboard::class.java)
+            startActivity(intent)
+        }
 
         //Redirecting to activities on button click
         tvCreate.setOnClickListener{
@@ -101,6 +111,14 @@ class BudgetHomeActivity : AppCompatActivity() {
         cvTipsI.setOnClickListener{
             navigateTips()
         }
+
+
+        // Set click listener for the imageButton
+//        imageButton.setOnClickListener {
+//            // Start the SalesDashboard activity
+//            val intent = Intent(this, MainDashboard::class.java)
+//            startActivity(intent)
+//        }
 
         //Calculating and displaying overall budget records
         val database = FirebaseDatabase.getInstance().getReference("Budgets")
