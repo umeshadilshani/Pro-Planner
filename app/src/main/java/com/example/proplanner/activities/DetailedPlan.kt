@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase
 class DetailedPlan : AppCompatActivity() {
     //Update
 
-    //
+    //Initialized
     private lateinit var binding: ActivityDetailedPlanBinding
     private lateinit var database: DatabaseReference
 
