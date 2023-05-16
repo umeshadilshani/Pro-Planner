@@ -113,7 +113,7 @@ class EditProduct : AppCompatActivity() {
 
         val button3 = mDialogView.findViewById<Button>(R.id.button3)
 
-
+        //
         ptProName.setText(intent.getStringExtra("ptproname") ?: "")
         ptQuan.setText(intent.getStringExtra("ptquan") ?: "")
 
