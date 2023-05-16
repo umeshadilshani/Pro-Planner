@@ -29,6 +29,7 @@ class PlanDashboard : AppCompatActivity() {
 
 
 
+        //view
         // Set up RecyclerView with GridLayoutManager
         val gridLayoutManager = GridLayoutManager(this@PlanDashboard, 1)
         binding.recyclerView.layoutManager = gridLayoutManager
