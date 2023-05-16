@@ -1,19 +1,21 @@
 //IT21318320 - Silva T.U.D
 package com.example.proplanner
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.proplanner.activities.BudgetFetchActivity
 import com.example.proplanner.activities.BudgetInsertionActivity
 import com.example.proplanner.models.Budget
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import org.junit.Assert.assertEquals
-import org.junit.Assert.fail
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -31,6 +33,30 @@ class BudgetInsertionActivityTest {
         activityScenarioRule.scenario.onActivity { currentActivity ->
             activity = currentActivity
         }
+    }
+
+    @Test
+    fun testSaveBudgetClicked_emptyFields() {
+        // Test if toast message shown for empty fields
+        val projectName = ""
+
+        activity.runOnUiThread {
+            activity.etProjectName.setText(projectName)
+
+            activity.saveBudgetClicked(View(activity))
+        }
+
+        val budgetRef = FirebaseDatabase.getInstance().getReference("Budgets")
+        budgetRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val budget = snapshot.children.last().getValue(Budget::class.java)
+                assertNotEquals(projectName, budget?.projectName)
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                fail("Database error: ${error.message}")
+            }
+        })
     }
 
     @Test
