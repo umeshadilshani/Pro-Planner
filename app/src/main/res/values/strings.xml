@@ -55,7 +55,7 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="login">Log in</string>
-    <string name="username_or_email">Username or Email</string>
+    <string name="username_or_email">Email</string>
     <string name="new_user">New User : <u><b>SignUp</b></u> here</string>
     <string name="existing_user">Already have an account : <u><b>Log In</b></u> here</string>
     <string name="des_pro_planner">Keep your business records up to date,\n\t\t\t\t\t\tFollow tips from expertise,\n\t\t\t\t\tAchieve your business goals.</string>

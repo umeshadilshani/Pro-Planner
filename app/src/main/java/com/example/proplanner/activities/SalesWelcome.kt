@@ -1,32 +1,38 @@
-//IT21318320 - Silva T.U.D
+//IT21321504
+//Gunawardana N.B.C.A.W.
+
 package com.example.proplanner.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.example.proplanner.R
 
-class BudgetWelcomeActivity : AppCompatActivity() {
-    //Declaring variables
-    private lateinit var txtSkip : TextView
-    private lateinit var txtNext : TextView
+class SalesWelcome : AppCompatActivity() {
 
+    private lateinit var txtSkip : TextView
+    private lateinit var textView5: TextView
+
+
+
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_budget_welcome)
+        setContentView(R.layout.activity_sales_welcome)
 
-        //Initializing variables
-        txtSkip = findViewById(R.id.tvSkip)
-        txtNext = findViewById(R.id.textView7)
+        txtSkip = findViewById(R.id.tskip)
+        textView5 = findViewById(R.id.textView5)
 
-        //Redirecting to home page on button click
         txtSkip.setOnClickListener{
             var intent = Intent(this, MainDashboard::class.java)
             startActivity(intent)
         }
-        txtNext.setOnClickListener{
-            val intent = Intent(this, SalesWelcome::class.java)
+
+        textView5.setOnClickListener {
+            val intent = Intent(this, MainDashboard::class.java)
             startActivity(intent)
         }
     }

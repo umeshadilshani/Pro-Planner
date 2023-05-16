@@ -20,10 +20,10 @@ class PlanWelcome : AppCompatActivity() {
         textView5 = findViewById(R.id.textView5)
         txtSkip = findViewById(R.id.textView4)
 
-//        textView5.setOnClickListener {
-//            val intent = Intent(this, InventoryWelcome::class.java)
-//            startActivity(intent)
-//        }
+        textView5.setOnClickListener {
+            val intent = Intent(this, InventoryWelcome::class.java)
+            startActivity(intent)
+        }
 
         txtSkip.setOnClickListener{
             var intent = Intent(this, MainDashboard::class.java)
