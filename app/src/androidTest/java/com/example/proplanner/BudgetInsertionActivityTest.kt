@@ -1,11 +1,14 @@
 //IT21318320 - Silva T.U.D
 package com.example.proplanner
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.proplanner.activities.BudgetFetchActivity
 import com.example.proplanner.activities.BudgetInsertionActivity
 import com.example.proplanner.models.Budget
 import com.google.firebase.database.DataSnapshot
