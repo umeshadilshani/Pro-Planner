@@ -35,6 +35,7 @@ class BudgetDetailsActivity : AppCompatActivity() {
         ibBack = findViewById(R.id.ibBack)
 
         ibBack.setOnClickListener{
+            //Updated back button
             var intent = Intent(this, BudgetFetchActivity::class.java)
             startActivity(intent)
         }
