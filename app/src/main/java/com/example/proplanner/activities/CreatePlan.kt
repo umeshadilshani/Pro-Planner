@@ -47,7 +47,7 @@ class CreatePlan : AppCompatActivity() {
             }
         }
     }
-
+    //
     fun validateInputs(): Boolean {
         var isValid = true
 
